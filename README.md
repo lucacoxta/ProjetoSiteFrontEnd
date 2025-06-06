@@ -4,7 +4,7 @@
 
 ## Descrição
 
-HIM! Sneakers é um site inspirado na cultura urbana e na autenticidade dos sneakers. O projeto oferece uma experiência moderna para quem quer expressar personalidade através do estilo e da moda urbana.
+HIM! é um site inspirado na cultura urbana e na autenticidade dos sneakers. O projeto oferece uma experiência moderna para quem quer expressar personalidade através do estilo e da moda urbana.
 
 O site apresenta uma seleção exclusiva de sneakers, além de páginas informativas como vídeos, contato, oportunidades de trabalho e a história da marca.
 
@@ -46,7 +46,7 @@ O site apresenta uma seleção exclusiva de sneakers, além de páginas informat
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/him-sneakers.git
+   git clone https://github.com/lucacoxta/ProjetoSiteFrontEnd
    ```
 2. Abra o arquivo `index.html` no seu navegador preferido.
 3. Navegue usando o menu superior para explorar as páginas.
@@ -56,7 +56,7 @@ O site apresenta uma seleção exclusiva de sneakers, além de páginas informat
 ## Autor
 
 **Lucas da Costa Ferreira**  
-Email: seu-email@exemplo.com  
+Email: lucascostaferreira@alunos.utfpr.edu.br
 © 2025 Lucas da Costa Ferreira
 
 ---
