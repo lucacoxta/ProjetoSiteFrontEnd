@@ -50,6 +50,7 @@ O site apresenta uma seleção exclusiva de sneakers, além de páginas informat
    ```
 2. Abra o arquivo `index.html` no seu navegador preferido.
 3. Navegue usando o menu superior para explorar as páginas.
+Linnk Github Pages: https://lucacoxta.github.io/ProjetoSiteFrontEnd/
 
 ---
 
