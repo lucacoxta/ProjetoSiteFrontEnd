@@ -244,21 +244,3 @@ footer a:hover {
   margin-top: 1rem;
   line-height: 1.5;
 }
-
-/* Botão de comprar: fundo preto, texto branco, padding para conforto, sem bordas,
-   margem superior, cursor pointer para indicar clicável, fonte em negrito e cantos arredondados */
-.botao-comprar {
-  background-color: black;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  margin-top: 1rem;
-  cursor: pointer;
-  font-weight: bold;
-  border-radius: 5px;
-}
-
-/* Efeito hover no botão comprar: escurece o fundo para feedback visual */
-.botao-comprar:hover {
-  background-color: #444;
-}
