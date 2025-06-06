@@ -1,0 +1,264 @@
+/* Reset básico: remove margens e paddings padrão, define box-sizing para border-box
+   Isso ajuda a garantir que padding e border sejam incluídos na largura e altura dos elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral do corpo da página: define fonte padrão, cor de fundo branca e texto escuro */
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #fff;
+    color: #111;
+}
+
+/* Cabeçalho: posicionamento relativo para poder posicionar elementos filhos absolutamente,
+   espaçamento interno (padding) e uso de flexbox para centralizar conteúdo horizontal e verticalmente */
+header {
+    position: relative;
+    padding: 80px 20px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Logo dentro do cabeçalho: define altura fixa para controlar tamanho da imagem
+   e object-fit para garantir que a imagem mantenha proporção e não distorça */
+.logo {
+    height: 100px;
+    object-fit: contain;
+}
+
+/* Menu de navegação superior: posiciona o menu no canto superior direito de forma absoluta,
+   e usa flexbox para alinhar os itens do menu em linha */
+.top-menu {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo dos links do menu superior: adiciona espaçamento entre eles,
+   remove sublinhado padrão, define cor, peso e tamanho da fonte, sem transformar o texto */
+.top-menu a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: none;
+}
+
+/* Grade de produtos: usa grid layout para organizar produtos em 4 colunas iguais,
+   com espaçamento vertical e horizontal definidos e centraliza a grade na página */
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* cria 4 colunas de tamanho igual */
+    gap: 60px 40px; /* espaçamento vertical e horizontal */
+    justify-content: center;
+    padding: 60px 40px; /* espaçamento interno ao redor da grade */
+}
+
+/* Imagens dentro da grade de produtos: define tamanho fixo quadrado, 
+   usa object-fit para cobrir toda área da imagem, arredonda cantos e centraliza horizontalmente */
+.produtos img {
+    width: 320px;         /* largura fixa */
+    height: 320px;        /* altura fixa para manter proporção quadrada */
+    object-fit: cover;    /* imagem cobre toda a área, podendo cortar partes */
+    border-radius: 10px;  /* cantos arredondados */
+    display: block;       /* remove espaço extra embaixo das imagens */
+    margin-left: auto;    /* centraliza horizontalmente */
+    margin-right: auto;
+}
+
+/* Container individual do produto: centraliza texto e aplica transição suave para transformações */
+.produto {
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+/* Efeito ao passar o mouse sobre o produto: aumenta o tamanho levemente para destaque */
+.produto:hover {
+    transform: scale(1.02); /* leve zoom */
+}
+
+/* Título do produto: adiciona espaçamento acima, define tamanho e cor do texto */
+.produto h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #222;
+}
+
+/* Parágrafo dentro do produto: espaçamento acima, tamanho da fonte, cor cinza e fonte em negrito */
+.produto p {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #555;
+    font-weight: bold;
+}
+
+/* Menu lateral fixo: fica fixo na lateral esquerda da tela, 
+   com distância do topo e da esquerda, largura e tamanho da fonte definidos */
+.side-menu {
+    position: fixed;
+    top: 160px;
+    left: 20px;
+    width: 140px;
+    font-size: 14px;
+}
+
+/* Lista do menu lateral: remove estilo padrão de lista e padding à esquerda */
+.side-menu ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Itens da lista do menu lateral: espaçamento entre itens e texto em negrito para destaque */
+.side-menu li {
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+/* Estilo para páginas de contato ou "quem somos": centraliza texto e adiciona espaçamento interno */
+main.contact-page {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+/* Título principal da página de contato: grande e em negrito, com espaçamento inferior */
+.contact-page h2 {
+    font-size: 64px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+/* Subtítulos na página de contato: tamanho intermediário, margem superior e cor definida */
+.contact-page h3 {
+    font-size: 28px;
+    margin-top: 30px;
+    color: #111;
+}
+
+/* Parágrafos na página de contato: tamanho da fonte, margem e cor do texto */
+.contact-page p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #444;
+}
+
+/* Link de e-mail: estilo simples, sem sublinhado, tamanho e cor da fonte definidos */
+.email-link {
+    font-size: 18px;
+    color: #111;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+/* Rodapé: centralizado, espaçamento interno, margem superior, fonte pequena, cor e fundo */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 50px;
+    font-size: 14px;
+    color: #111;
+    background-color: #fff;
+    line-height: 1.8;
+}
+
+/* Parágrafos no rodapé: adiciona margem inferior para separar itens */
+footer p {
+    margin-bottom: 10px;
+}
+
+/* Links no rodapé: cor preta, sem sublinhado, peso médio */
+footer a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Efeito hover para links do rodapé: sublinha o texto ao passar o mouse */
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Link "Voltar ao topo": estilo simples, margem inferior e fonte pequena */
+.back-to-top {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* Container detalhado do produto: usa flexbox para layout flexível, permitindo quebra de linha,
+   centraliza conteúdo e adiciona espaçamento interno e entre os elementos */
+.produto-detalhado {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+/* Galeria do produto: limita largura máxima para evitar que fique muito grande */
+.galeria-produto {
+  max-width: 400px;
+}
+
+/* Imagem principal do produto: largura total do container e cantos arredondados */
+.imagem-destaque {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Miniaturas de imagens: largura menor, margem para espaçamento e cursor pointer para indicar clique */
+.miniaturas img {
+  width: 80px;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Informações do produto: limite de largura para manter layout consistente */
+.info-produto {
+  max-width: 400px;
+}
+
+/* Título do produto detalhado: tamanho maior e espaçamento inferior */
+.info-produto h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Preço: cor em vermelho para chamar atenção, tamanho grande e margem inferior */
+.preco {
+  color: #e60000;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Descrição: margem superior e espaçamento entre linhas para melhor leitura */
+.descricao {
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+
+/* Botão de comprar: fundo preto, texto branco, padding para conforto, sem bordas,
+   margem superior, cursor pointer para indicar clicável, fonte em negrito e cantos arredondados */
+.botao-comprar {
+  background-color: black;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  margin-top: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Efeito hover no botão comprar: escurece o fundo para feedback visual */
+.botao-comprar:hover {
+  background-color: #444;
+}
