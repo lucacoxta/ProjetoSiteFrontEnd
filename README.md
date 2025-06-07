@@ -23,9 +23,8 @@ O site apresenta uma seleção exclusiva de sneakers, além de páginas informat
 
 ## 🛠 Tecnologias Utilizadas
 
-- HTML5  
-- CSS3  
-- Imagens otimizadas: `.webp`, `.avif`, `.jpg`
+- HTML 
+- CSS 
 
 ---
 
